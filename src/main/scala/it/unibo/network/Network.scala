@@ -10,7 +10,7 @@ class Network[I, O](val input: Int, val output: Int) extends js.Object:
   def evolve(example: js.Array[Example[I, O]], config: EvolveConfig): js.Promise[_] = js.native
   def activate(elements: js.Array[I]): O = js.native
 
-// If in a certain application I am interest in a subset of the API, I can define only that options
+// If in a certain application I am interested in a subset of the API, I can define only that options
 class EvolveConfig(val equal: Boolean, val error: Double, val iterations: Int = 5000) extends js.Object
 
 // js typed object
