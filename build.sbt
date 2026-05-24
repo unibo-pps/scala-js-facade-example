@@ -1,5 +1,6 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / scalaVersion := "3.3.7"
+ThisBuild / name := "scalajs-facade-example"
 
 lazy val root = (project in file("."))
   .aggregate(handcrafted, scalablytyped)
